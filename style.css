@@ -1,0 +1,28 @@
+/* per avere un unico documento html con impaginazione variabile, che possa addattarsi az diverse tipologie di schermo abbiamo a disposizione la media query*/
+/*il CSS base è quello mobile!*/
+h1,
+ul {
+  text-align: center;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+#cat-container img {
+  max-width: 100%;
+}
+/*se visualizzo da tablet*/
+@media screen and (min-width: 769px) {
+  nav li {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+  #cat-container {
+    text-align: left;
+  }
+}
